@@ -1,6 +1,1 @@
-lists/list1.txt
-lists/list2.txt
-lists/list3.txt
-user_permissions/profile1_permissions.txt
-user_permissions/profile2_permissions.txt
-user_permissions/profile3_permissions.txt
+*.txt
