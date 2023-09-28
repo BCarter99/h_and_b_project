@@ -1,3 +1,0 @@
-list1.txt
-list2.txt
-list3.txt
