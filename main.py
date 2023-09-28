@@ -7,9 +7,9 @@ import profiles as pf
 
 def main():
 
-  run = pf.profile()
+  pf.profile()
   
-  input1 = 4 if run == 'quit' else 0
+  input1 = 0
     
   while input1 != 4:
   

@@ -1,4 +1,4 @@
-# import sys
+import sys
 import functions as func
 
 
@@ -64,8 +64,8 @@ def profile():
       pass
 
     elif input1 == 3:
-      # sys.exit(0)
-      return 'quit'
+      sys.exit('Quit')
+
 '''  
 Step 1: Creating profile1 profile2 profile3. 
 I am unsure what this will look like. 
