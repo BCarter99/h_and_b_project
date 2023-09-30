@@ -33,7 +33,7 @@ def main():
 
         # prints the list to the user
         elif input1 == 2:
-            with open('lists/list1.txt') as list_file:
+            with open('lists/list1.txt', 'r') as list_file:
                 file_items = list_file.read()
             print()
             print(file_items)
