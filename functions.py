@@ -48,7 +48,7 @@ def validate_password(user, password):
     '''
     load_dotenv()
     env_password = os.getenv(user)
-    print(env_password)
+
     if password == env_password:
         print('\nLog in successful\n')
         return True

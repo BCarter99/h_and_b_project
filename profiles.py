@@ -29,8 +29,10 @@ def profile():
                 except ValueError:
                     print('\nYikes, imagine not choosing a valid profile <3\n')
 
-                # these if statements call the function that verifies that the password the user enters matches
-                # the password that is assigned to each profile in profiles_info.py. If not, alerts
+                # these if statements call the function that verifies that the password 
+                # the user enters matches
+                # the password that is assigned to each profile in profiles_info.py. If 
+                # not, alerts
                 # the user and has them try again, until they get it right
                 if profile == 1:
                     while True:
