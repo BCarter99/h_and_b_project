@@ -1,4 +1,5 @@
 import sys
+import maskpass
 import functions as func
 
 
@@ -29,14 +30,14 @@ def profile():
                 except ValueError:
                     print('\nYikes, imagine not choosing a valid profile <3\n')
 
-                # these if statements call the function that verifies that the password 
+                # these if statements call the function that verifies that the password
                 # the user enters matches
-                # the password that is assigned to each profile in profiles_info.py. If 
+                # the password that is assigned to each profile in profiles_info.py. If
                 # not, alerts
                 # the user and has them try again, until they get it right
                 if profile == 1:
                     while True:
-                        password = input('\nPassword: ')
+                        password = maskpass.askpass(prompt='\nPassword: ')
 
                         break_flag = func.validate_password(
                             'PROFILE1', password)
@@ -46,7 +47,7 @@ def profile():
 
                 elif profile == 2:
                     while True:
-                        password = input('\nPassword: ')
+                        password = maskpass.askpass(prompt='\nPassword: ')
 
                         break_flag = func.validate_password(
                             'PROFILE2', password)
@@ -56,7 +57,7 @@ def profile():
 
                 elif profile == 3:
                     while True:
-                        password = input('\nPassword: ')
+                        password = maskpass.askpass(prompt='\nPassword: ')
 
                         break_flag = func.validate_password(
                             'PROFILE3', password)
