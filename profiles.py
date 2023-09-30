@@ -29,15 +29,15 @@ def profile():
                 except ValueError:
                     print('\nYikes, imagine not choosing a valid profile <3\n')
 
-                # these if statements verify that the password the user enters matches the
-                # password that is assigned to each profile in profiles_info.py. If not, alerts
+                # these if statements call the function that verifies that the password the user enters matches
+                # the password that is assigned to each profile in profiles_info.py. If not, alerts
                 # the user and has them try again, until they get it right
                 if profile == 1:
                     while True:
                         password = input('\nPassword: ')
 
                         break_flag = func.validate_password(
-                            'profile1', password)
+                            'PROFILE1', password)
 
                         if break_flag:
                             return
@@ -47,7 +47,7 @@ def profile():
                         password = input('\nPassword: ')
 
                         break_flag = func.validate_password(
-                            'profile2', password)
+                            'PROFILE2', password)
 
                         if break_flag:
                             return
@@ -57,7 +57,7 @@ def profile():
                         password = input('\nPassword: ')
 
                         break_flag = func.validate_password(
-                            'profile3', password)
+                            'PROFILE3', password)
 
                         if break_flag:
                             return
@@ -66,7 +66,7 @@ def profile():
             pass
 
         elif input1 == 3:
-            sys.exit('Quit')
+            sys.exit('\nQuit\n')
 
 
 '''  
